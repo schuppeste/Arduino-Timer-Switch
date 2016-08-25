@@ -16,5 +16,5 @@ uno.build.variant=standard
 Add Lines
 uno.menu.cpu.Timer0=Timer0
 uno.menu.cpu.Timer0.build.variant=standard
-uno.menu.cpu.Timer1=Timer1
+uno.menu.cpu.Timer1=Timer1</br>
 uno.menu.cpu.Timer1.build.variant=TNStandard
