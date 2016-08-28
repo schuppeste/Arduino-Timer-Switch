@@ -23,9 +23,9 @@ initTimer(1,0,8);
    unsigned long tmpcheck=F_CPU/256;
    Serial.println(tmpcheck);
    double millifracs= (double)1000.0f/tmpcheck;
-printDouble(millifracs,10000);
+   printDouble(millifracs,10000);
 
-delay(2000);
+   delay(2000);
 }
 int lastprecmillis=0;
 int lastmillis=0;
@@ -36,17 +36,19 @@ void loop()
   long mymillis=millis();
   long myprecmillis=precmillis();
   
- // Serial.println(now());
- //Serial.println(myprecmillis-lastprecmillis);
- //lastprecmillis=myprecmillis;
-//Serial.println(mymillis-lastmillis);
-  Serial.println( myprecmillis-mymillis-sync);
+   // Serial.println(now());
+   //Serial.println(myprecmillis-lastprecmillis);
+   //lastprecmillis=myprecmillis;
+   //Serial.println(mymillis-lastmillis);
+   Serial.println( myprecmillis-mymillis-sync);
    Serial.println( precmillis());
 
-  delay(1000);
+   delay(1000);
+
 if(sync==0)
 sync= myprecmillis-mymillis;
 }
+
 void printDouble( double val, unsigned int precision) {
   // prints val with number of decimal places determine by precision
   // NOTE: precision is 1 followed by the number of zeros for the desired number of decimial places
